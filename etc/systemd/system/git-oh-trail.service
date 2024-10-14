@@ -1,0 +1,10 @@
+[Unit]
+Description=Auto-restart Git auto-commit service
+
+[Service]
+ExecStart=/usr/local/bin/git-oh-trail.zsh
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

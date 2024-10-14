@@ -1,0 +1,10 @@
+[Unit]
+Description=Keep an eye on the /etc/passwd update event as a means for new users being added
+
+[Service]
+ExecStart=/usr/local/bin/newUserWatcher.zsh
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

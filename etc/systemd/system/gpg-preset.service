@@ -1,0 +1,5 @@
+[Unit]
+Description=Run gpg-preset script.
+
+[Service]
+ExecStart=/root/bin/gpg-preset.zsh

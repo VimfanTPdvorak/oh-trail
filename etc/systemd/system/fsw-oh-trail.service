@@ -1,0 +1,10 @@
+[Unit]
+Description=Git auto-commit service
+
+[Service]
+ExecStart=/usr/local/bin/fsw-oh-trail.zsh
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

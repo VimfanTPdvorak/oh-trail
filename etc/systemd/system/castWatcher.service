@@ -1,0 +1,10 @@
+[Unit]
+Description=Flag append only to newly created asciinema cast file
+
+[Service]
+ExecStart=/usr/local/bin/castWatcher.zsh
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

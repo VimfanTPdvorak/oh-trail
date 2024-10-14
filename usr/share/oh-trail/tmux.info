@@ -1,0 +1,16 @@
+Dear admin,
+
+I am one of the oh-trail servers. Everything you see here is being recorded
+in the form of an asciinema cast file. Please do your best to not reveal
+any of your passwords.
+
+I wish following information will be useful for users who aren't familiar
+with tmux. Here are the very basic thing you must know about:
+
+1. Press Ctrl+s, then press c to launch a new window (shell terminal) in a
+   new tab.
+2. Press Ctrl+s, then press p to navigate to the previous window
+3. Press Ctrl+s, then press n to navigate to the next window
+
+For more trick, press Ctrl+s, then press ? to display tmux's help page.
+While on the help page, press q to close the help page.

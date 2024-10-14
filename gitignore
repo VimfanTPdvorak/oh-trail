@@ -1,0 +1,72 @@
+# Ignore everything first
+*
+
+# Track /etc/{hosts,rsyslog.conf}
+!etc/
+!etc/hosts
+!etc/rsyslog.conf
+!etc/shells
+
+# Track changes in sudoers configuration
+!etc/sudoers
+
+# Track ZSH configuration files
+!etc/zsh/
+!etc/zsh/**
+
+# Track oh-trail services configuration files
+!etc/systemd/
+etc/systemd/**
+!etc/systemd/system/
+etc/systemd/system/**
+!etc/systemd/system/git-oh-trail.service
+!etc/systemd/system/fsw-oh-trail.service
+!etc/systemd/system/castWatcher.service
+!etc/systemd/system/newUserWatcher.service
+!etc/systemd/system/gpg-preset.service
+!etc/systemd/system/gpg-preset.timer
+
+# Track useradd configuration file
+!etc/default/
+!etc/default/useradd
+
+# Track Nginx related configurations
+!etc/nginx/
+!etc/nginx/nginx.conf
+!etc/nginx/sites-available/
+!etc/nginx/sites-available/**
+!etc/nginx/sites-enabled/
+!etc/nginx/sites-enabled/**
+
+# Track used oh-trail scripts
+!usr/
+!usr/local/
+usr/local/**
+!usr/local/bin/
+usr/local/bin/**
+!usr/local/bin/oh-trail.zsh
+!usr/local/bin/fsw-oh-trail.zsh
+!usr/local/bin/gitAutoCommit.zsh
+!usr/local/bin/git-oh-trail.zsh
+!usr/local/bin/restartFsw-oh-trail.zsh
+!usr/local/bin/castWatcher.zsh
+!usr/local/bin/newUserWatcher.zsh
+
+# Track starship.toml file
+!root/
+root/**
+!root/.gitconfig
+!root/.config/
+root/.config/**
+!root/.config/starship.toml
+
+# Script for loading passphrase to GPG cache. This script is used by the
+# gpg-preset.service.
+!root/bin/
+!root/bin/gpg-preset.zsh
+
+# Standard GPG configuration tobe used on servers
+!root/.gnupg/
+!root/.gnupg/gpg-agent.conf
+
+!.gitignore
